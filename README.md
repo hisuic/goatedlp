@@ -6,7 +6,7 @@ The GOATED yt-dlp wrapper for musics.
 曲名のリスト作成、URL 取得、音声保存を分けて実行することも可能です
 
 ## Requirements
-最新版のyt-dlp
+最新版のyt-dlp。作成時はバージョン `2026.03.13` を使用。
 ```bash
 python3 -m pip install yt-dlp
 ```
