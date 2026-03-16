@@ -1,4 +1,6 @@
-# The GOATED yt-dlp
+# 🐐 The GOATED yt-dlp 🐐
+
+The GOATED yt-dlp wrapper for musics.
 
 `songs.txt` に曲名を書いておくと、YouTube 検索の先頭動画 URL を集め、その一覧をもとに音声を一括ダウンロードするツールです🔥  
 曲名のリスト作成、URL 取得、音声保存を分けて実行することも可能です
