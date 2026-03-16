@@ -1,0 +1,6 @@
+{
+  "query_template": "{title} audio",
+  "songs_file": "songs.txt",
+  "urls_file": "youtube_urls.txt",
+  "download_dir": "outputs"
+}
