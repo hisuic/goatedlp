@@ -10,7 +10,10 @@ if [[ ! -f "$CONFIG_FILE" ]]; then
   exit 1
 fi
 
-readarray -t TARGET_FILES < <(
+TARGET_FILES=()
+while IFS= read -r target_file; do
+  TARGET_FILES+=("$target_file")
+done < <(
   python3 - <<'PY'
 import json
 from pathlib import Path
