@@ -69,7 +69,10 @@ def download_dj_fast(file_path=DEFAULT_URLS_FILE, output_dir=DEFAULT_OUTPUT_DIR)
 
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            ydl.download(urls)
+            download_result = ydl.download(urls)
+        if download_result != 0:
+            print("Error: One or more downloads failed.", file=sys.stderr)
+            return download_result
         print("\n🔥 Download Complete 🔥")
         return 0
     except Exception as e:
