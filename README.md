@@ -6,9 +6,22 @@ The GOATED yt-dlp wrapper for musics.
 曲名のリスト作成、URL 取得、音声保存を分けて実行することも可能です
 
 ## Requirements
-最新版のyt-dlp。作成時はバージョン `2026.03.13` を使用。
+
+- Python 3.10 以上
+- 最新版の yt-dlp（初期作成時の使用バージョン: `2026.03.13`）
+- `ffmpeg` / `ffprobe`
+- Deno などの JavaScript ランタイム（YouTube の完全なサポートに必要）
+
+yt-dlp と、`yt-dlp-ejs` を含む標準の追加依存関係をインストールします。
+
 ```bash
-python3 -m pip install yt-dlp
+python3 -m pip install -U "yt-dlp[default]"
+```
+
+`ffmpeg` / `ffprobe` と JavaScript ランタイムは別途インストールしてください。macOS で Homebrew を使う場合:
+
+```bash
+brew install ffmpeg deno
 ```
 
 次に `songs.txt` に曲名を箇条書きで書きます。
