@@ -63,6 +63,15 @@ python3 fetch_youtube_urls.py
 python3 app.py
 ```
 
+曲名、取得済み URL、ダウンロード済みファイルを初期状態に戻す場合:
+
+```bash
+./reset.sh
+```
+
+`songs.txt` と `youtube_urls.txt` は空になり、`outputs` ディレクトリは残したまま、その中身だけが削除されます。
+実行前に確認メッセージが表示され、`y` または `yes` を入力した場合のみリセットされます。
+
 URL ファイルや保存先を直接指定する場合:
 
 ```bash
